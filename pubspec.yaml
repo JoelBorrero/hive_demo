@@ -1,0 +1,26 @@
+name: crud_hive
+description: A CRUD demo with Hive
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  hive:                         # to create and maintain the database,
+  hive_flutter: ^1.0.0          # to provide flutter-runtime libraries for the objectbox,
+  path_provider:                # to provide the path to the application's document directory to store the database,
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner:                 # to generate dart files for using our code, and
+  hive_generator:               # will generate the files using build_runner.
+
+flutter:
+  uses-material-design: true
